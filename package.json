@@ -1,0 +1,25 @@
+{
+  "name": "nko2015-entry",
+  "version": "0.0.1",
+  "description": "Our soon to be awesome entry for NKO2015. Let's make something amazing.",
+  "author": "Node Knockout Team <all@nodeknockout.com>",
+  "main": "./app.js",
+  "dependencies": {
+    "babel-core": "^6.1.2",
+    "babel-loader": "^6.0.1",
+    "babel-preset-es2015": "^6.1.2",
+    "express": "3.x.x",
+    "jquery": "^2.1.4",
+    "webpack": "^1.12.3"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "postinstall": "node scripts/postinstall.js",
+    "dev": "webpack-dev-server --host localhost --port 8080 --colors --hot --inline --config webpack.config.js",
+    "build": "webpack --colors --config webpack.config.js",
+    "kill": "taskkill /f /im node.exe"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "^1.12.1"
+  }
+}

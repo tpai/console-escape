@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <title>Node Knockout 2015</title>
+  <head>
+    <script type="text/javascript" src="public/bundle.js"></script>
+      <style>
+          html, body {
+              background-color: black;
+          }
+          div.container {
+            width: 100%;
+          }
+          div.container div.item {
+            color: white;
+            width: 100%;
+            margin: 0 auto;
+            text-align: center;
+          }
+          div.item img {
+            max-width: 92vw;
+            max-height: 92vh;
+          }
+      </style>
+  </head>
+  <body>
+  <audio autoplay="autoplay" loop="loop">
+      <source src="assets/stage1_bg_music.mp4" type="audio/mp4">
+  </audio>
+  <div class="container">
+    <div id="stage0" class="item">
+      <h1>Console Escape</h1>
+      <pre>Press 'F12' or 'Command + Option + I' to launch the game.</pre>
+    </div>
+      <div id="stage1" style="display: none" class="item">
+          <img src="assets/stage1_bg.jpg" alt="so cold..."/>
+      </div>
+      <div id="image-egg-baboon" style="display:none;position: absolute;">
+          <img id="baboon" src="http://i.imgur.com/nkGBTm1.jpg" width=100 height=100 alt="thank u, banana friend"/>
+      </div>
+      <div id="stage2" style="display: none" class="item">
+          <img src="assets/stage2_bg.jpg" alt="what the..."/>
+      </div>
+      <div id="stage3" style="display: none" class="item">
+          <img src="assets/stage3_bg.jpg" alt="it's horrify'"/>
+      </div>
+      <div id="stage4" style="display: none" class="item">
+          <img src="assets/stage4_bg0.jpg" alt="it's horrify'"/>
+      </div>
+      <div id="final" style="display: none" class="item">
+          <img src="assets/stage4_bg.jpg" alt="sky"/>
+      </div>
+    <div class="item">
+      <iframe src="http://nodeknockout.com/iframe/mr-tvbs" style="background-color: white" frameborder=0 scrolling=no allowtransparency=true width=115 height=25></iframe>
+    </div>
+  </div>
+  </body>
+</html>
