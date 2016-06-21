@@ -11,7 +11,7 @@ module.exports = function(app){
             if (req.params.id == 'boss' && req.params.pass == '123456') {
                 res.send({
                     msg:'Login success!',
-                    skillText: 's(itemName, key, value); // Set state of item',
+                    skillText: '> s(item, key, value); // Set state',
                     reward: {
                         type: 'skill',
                         dataType: 'script',

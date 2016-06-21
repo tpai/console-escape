@@ -5,12 +5,12 @@ export var sk = (n) => {
         case 4:
         case 3:
         case 2:
-            sys2("g(someone, itemName); // give item to someone");
-            sys2("s(itemName, key, value); // Set state of item");
+            sys2("g(someone, item); // give item to someone");
+            sys2("s(item, key, value); // Set state of item");
         case 1:
         default:
             sys2(`> e('.'); // explore around you`);
-            sys2(`> w(item : string); // watch specific item\n`);
+            sys2(`> w(item); // watch specific item\n`);
             sys2(`> h() // help`);
             break;
     }
@@ -35,7 +35,7 @@ export var watch = (item, itemName) => {
             var params = obj[arr[i]].toString().match(/\([^)]*\)/);
             if (params !== null) {
                 console.log(arr[i] + ": " + params);
-                sys2(arr[i] + params + ";");
+                sys2(`> ${arr[i]} ${params} ;`);
                 window[arr[i]] = obj[arr[i]];
             }
         }

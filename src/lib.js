@@ -17,4 +17,4 @@ export function sys2(text) {
 	console.log("%c" + text, SKILL_STYLE);
 }
 
-export var host = "http://" + location.host;
+export var host = "http://" + location.hostname + ":8000";
