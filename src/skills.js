@@ -5,8 +5,8 @@ export var sk = (n) => {
         case 4:
         case 3:
         case 2:
-            sys2("g(someone, item); // give item to someone");
-            sys2("s(item, key, value); // Set state of item");
+            sys2("> g(someone, item); // give item to someone");
+            sys2("> s(item, key, value); // Set state of item");
         case 1:
         default:
             sys2(`> e('.'); // explore around you`);
