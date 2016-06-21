@@ -1,41 +1,19 @@
-## Quick Start
+# Console Escape
 
-~~~sh
-# getting the code
-git clone git@github.com:nko5/mr-tvbs.git && cd ./mr-tvbs/
+It's a puzzle game for developer, use the tricks of chrome development console to pass every stage.
 
-# developing
-npm install
+## Prerequisite
+
+```
+// install dependency modules
+npm i
+
+// run server
 npm start
 
-# setup your modulus account
-npm install -g modulus
-modulus login
+// start development server
+npm run dev
 
-# deploying to Modulus (to http://mr-tvbs.2015.nodeknockout.com/)
-modulus deploy
-
-# view the most recent logs from modulus
-modulus project logs
-~~~
-
-Read more about this setup [on our blog][deploying-nko].
-
-[deploying-nko]: http://www.nodeknockout.com/deploying
-
-### Vote KO Widget
-
-![Vote KO widget](http://f.cl.ly/items/1n3g0W0F0G3V0i0d0321/Screen%20Shot%202012-11-04%20at%2010.01.36%20AM.png)
-
-Use our "Vote KO" widget to let from your app directly. Here's the code for
-including it in your site:
-
-~~~html
-<iframe src="http://nodeknockout.com/iframe/mr-tvbs" frameborder=0 scrolling=no allowtransparency=true width=115 height=25>
-</iframe>
-~~~
-
-## Have fun!
-
-If you have any issues, we're on IRC in #nodeknockout on freenode, email us at
-<help@nodeknockout.com>, or tweet [@nodeknockout](https://twitter.com/nodeknockout).
+// build client js
+npm run build
+```
